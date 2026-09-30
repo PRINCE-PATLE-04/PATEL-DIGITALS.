@@ -152,9 +152,14 @@ export default function Home() {
             <div className="border-t border-gold/10" />
           </div>
 
-          <RevealSection className="mt-12">
+          <RevealSection className="mt-12 flex flex-wrap items-center gap-6">
             <Link to="/services" className="inline-flex items-center gap-2 text-gold text-sm tracking-wide hover:gap-4 transition-all duration-300">
               View All Services
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+            </Link>
+            <span className="text-cream/20">|</span>
+            <Link to="/pricing" className="inline-flex items-center gap-2 text-gold/70 text-sm tracking-wide hover:text-gold hover:gap-4 transition-all duration-300">
+              View Pricing
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
             </Link>
           </RevealSection>

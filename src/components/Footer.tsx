@@ -25,8 +25,8 @@ export default function Footer() {
               {[
                 { to: '/', label: 'Home' },
                 { to: '/services', label: 'Services' },
+                { to: '/pricing', label: 'Pricing' },
                 { to: '/work', label: 'Work' },
-                { to: '/about', label: 'About' },
                 { to: '/contact', label: 'Contact' },
               ].map((link) => (
                 <Link
@@ -59,7 +59,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Patel Digitals. All rights reserved.
           </p>
           <p className="text-cream/40 text-xs tracking-wide">
-            Digital Strategy • Design • Growth.
+            Designed & Developed by <span className="text-gold/60">Prince Patel</span>
           </p>
         </div>
       </div>
