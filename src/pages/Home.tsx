@@ -42,7 +42,7 @@ export default function Home() {
         {/* Full hero banner background */}
         <div className="absolute inset-0">
           <img
-            src="https://image.qwenlm.ai/generated-images/ffc35748-7437-4370-b506-7a16a3865d07/_result.png"
+            src="https://image.qwenlm.ai/generated-images/3ba5c5e6-fd0b-4b3d-88df-29604a9dfc84/_result.png"
             alt=""
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -179,7 +179,7 @@ export default function Home() {
         {/* Background visual */}
         <div className="absolute inset-0">
           <img
-            src="https://image.qwenlm.ai/generated-images/4f566db9-9642-4dbe-a658-c9bd9582555e/_result.png"
+            src="https://image.qwenlm.ai/generated-images/210f5c15-316e-4bfe-89c5-f43fb5108366/_result.png"
             alt=""
             className="absolute inset-0 w-full h-full object-cover opacity-20"
           />

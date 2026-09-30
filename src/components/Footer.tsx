@@ -13,7 +13,7 @@ export default function Footer() {
           <div>
             <Link to="/" className="inline-block">
               <img
-                src="https://image.qwenlm.ai/generated-images/3b4a5531-34ac-440d-b6d9-d67bde15baa3/_result.png"
+                src="https://image.qwenlm.ai/generated-images/38863507-3705-4ba6-a001-0f1b3d6932fe/_result.png"
                 alt="Patel Digitals Logo"
                 className="h-14 w-auto object-contain"
               />
