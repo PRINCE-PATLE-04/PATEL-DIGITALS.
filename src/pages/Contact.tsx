@@ -33,8 +33,13 @@ export default function Contact() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 lg:pt-40 pb-16 lg:pb-24">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+      <section className="relative pt-32 lg:pt-40 pb-16 lg:pb-24 overflow-hidden section-gradient-1">
+        <div className="absolute inset-0">
+          <div className="absolute top-0 right-0 w-1/2 h-full opacity-10">
+            <div className="absolute inset-0 bg-gradient-to-l from-gold/30 to-transparent" />
+          </div>
+        </div>
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-12">
           <div className="gold-divider mb-8" />
           <h1 className="font-playfair text-4xl sm:text-5xl lg:text-6xl font-semibold text-cream leading-tight max-w-4xl">
             LET'S START SOMETHING GREAT.

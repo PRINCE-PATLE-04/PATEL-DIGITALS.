@@ -94,8 +94,11 @@ export default function Work() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 lg:py-32 border-t border-gold/10 bg-burgundy/20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 text-center">
+      <section className="relative py-24 lg:py-32 border-t border-gold/10 section-gradient-3 overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute bottom-0 left-1/4 w-96 h-96 rounded-full bg-gold/5 blur-3xl" />
+        </div>
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-12 text-center">
           <RevealSection>
             <h2 className="font-playfair text-3xl lg:text-5xl font-semibold text-cream">HAVE A PROJECT IN MIND?</h2>
             <p className="mt-6 text-cream/70 text-lg max-w-xl mx-auto">

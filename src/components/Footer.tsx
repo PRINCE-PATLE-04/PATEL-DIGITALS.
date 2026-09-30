@@ -2,13 +2,21 @@ import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
-    <footer className="bg-burgundy-black border-t border-gold/10">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-24">
+    <footer className="relative bg-gradient-to-b from-burgundy-black via-[#1A0C0E] to-black border-t border-gold/10 overflow-hidden">
+      {/* Subtle background accent */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] rounded-full bg-gold blur-3xl" />
+      </div>
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-20">
           {/* Brand */}
           <div>
-            <Link to="/" className="font-playfair text-2xl font-semibold tracking-wider text-cream">
-              PATEL DIGITALS
+            <Link to="/" className="inline-block">
+              <img
+                src="https://image.qwenlm.ai/generated-images/3b4a5531-34ac-440d-b6d9-d67bde15baa3/_result.png"
+                alt="Patel Digitals Logo"
+                className="h-14 w-auto object-contain"
+              />
             </Link>
             <p className="mt-4 text-cream/60 text-sm leading-relaxed">
               Digital Strategy • Design • Growth.

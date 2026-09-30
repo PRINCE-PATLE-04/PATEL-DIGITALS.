@@ -39,22 +39,28 @@ export default function Home() {
     <>
       {/* HERO */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
-        {/* Background elements */}
+        {/* Full hero banner background */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 right-1/4 w-96 h-96 rounded-full bg-gold/5 blur-3xl animate-float" />
-          <div className="absolute bottom-1/4 left-1/3 w-72 h-72 rounded-full bg-burgundy-light/20 blur-3xl" />
-          <div className="absolute top-1/2 right-1/3 w-64 h-64 rounded-full bg-gold-light/3 blur-2xl" />
+          <img
+            src="https://image.qwenlm.ai/generated-images/ffc35748-7437-4370-b506-7a16a3865d07/_result.png"
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          {/* Gradient overlays for depth */}
+          <div className="absolute inset-0 bg-gradient-to-r from-burgundy-black via-burgundy-black/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-burgundy-black via-transparent to-burgundy-black/40" />
+          <div className="absolute inset-0 bg-burgundy-black/30" />
         </div>
 
-        {/* Hero visual - abstract metallic composition */}
-        <div className="absolute top-0 right-0 w-1/2 h-full hidden lg:block">
+        {/* Floating gold elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-1/4 right-1/4 w-96 h-96 rounded-full bg-gold/5 blur-3xl animate-float" />
+          <div className="absolute bottom-1/4 left-1/3 w-72 h-72 rounded-full bg-burgundy-light/20 blur-3xl" />
+        </div>
+
+        {/* Hero visual - abstract metallic composition (desktop only overlay) */}
+        <div className="absolute top-0 right-0 w-1/2 h-full hidden lg:block opacity-60">
           <div className="relative w-full h-full">
-            {/* Background image */}
-            <img
-              src="https://image.qwenlm.ai/generated-images/d0b18d31-a033-4690-b8d3-ac441e3a4a36/_result.png"
-              alt=""
-              className="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-lighten"
-            />
             {/* Abstract gold shapes overlay */}
             <svg className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] opacity-20" viewBox="0 0 500 500">
               <defs>
@@ -104,7 +110,9 @@ export default function Home() {
       </section>
 
       {/* INTRO / BRAND VALUES */}
-      <section className="py-24 lg:py-32 border-t border-gold/10">
+      <section className="relative py-24 lg:py-32 border-t border-gold/10 section-gradient-1">
+        {/* Subtle gold accent line */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-20 bg-gradient-to-b from-gold/30 to-transparent" />
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <RevealSection>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-20">
@@ -167,7 +175,17 @@ export default function Home() {
       </section>
 
       {/* WHY PATEL DIGITALS */}
-      <section className="py-24 lg:py-32 border-t border-gold/10 bg-burgundy/30">
+      <section className="relative py-24 lg:py-32 border-t border-gold/10 overflow-hidden">
+        {/* Background visual */}
+        <div className="absolute inset-0">
+          <img
+            src="https://image.qwenlm.ai/generated-images/4f566db9-9642-4dbe-a658-c9bd9582555e/_result.png"
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-burgundy-black via-burgundy-black/90 to-burgundy/80" />
+        </div>
+        <div className="relative">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             <RevealSection>
@@ -191,7 +209,7 @@ export default function Home() {
                   { title: 'Technology', icon: '○' },
                   { title: 'Growth', icon: '△' },
                 ].map((item, i) => (
-                  <div key={i} className="border border-gold/20 p-8 hover:border-gold/40 transition-colors duration-300 group">
+                  <div key={i} className="premium-card p-8 group">
                     <span className="text-gold text-2xl mb-4 block">{item.icon}</span>
                     <h4 className="font-playfair text-lg text-cream group-hover:text-gold transition-colors duration-300">{item.title}</h4>
                   </div>
@@ -200,10 +218,15 @@ export default function Home() {
             </RevealSection>
           </div>
         </div>
+        </div>
       </section>
 
       {/* SELECTED WORK */}
-      <section className="py-24 lg:py-32 border-t border-gold/10">
+      <section className="relative py-24 lg:py-32 border-t border-gold/10 section-gradient-2">
+        {/* Background accent */}
+        <div className="absolute bottom-0 left-0 w-1/2 h-1/2 opacity-5">
+          <div className="absolute inset-0 bg-gradient-to-tr from-gold to-transparent rounded-full blur-3xl" />
+        </div>
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <RevealSection>
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
@@ -225,7 +248,7 @@ export default function Home() {
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="portfolio-card group block"
+                  className="portfolio-card premium-card group block"
                 >
                   <div className="aspect-[4/3] relative overflow-hidden bg-burgundy">
                     <img
@@ -253,7 +276,11 @@ export default function Home() {
       </section>
 
       {/* PROCESS */}
-      <section className="py-24 lg:py-32 border-t border-gold/10 bg-burgundy/20">
+      <section className="relative py-24 lg:py-32 border-t border-gold/10 overflow-hidden section-gradient-2">
+        {/* Subtle background accent */}
+        <div className="absolute top-0 right-0 w-1/3 h-full opacity-10">
+          <div className="absolute inset-0 bg-gradient-to-l from-gold/20 to-transparent" />
+        </div>
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <RevealSection>
             <p className="text-gold text-xs tracking-widest uppercase mb-4">Our Process</p>
@@ -278,9 +305,10 @@ export default function Home() {
       </section>
 
       {/* FINAL CTA */}
-      <section className="py-24 lg:py-40 border-t border-gold/10 relative overflow-hidden">
+      <section className="relative py-24 lg:py-40 border-t border-gold/10 overflow-hidden section-gradient-3">
         <div className="absolute inset-0">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-gold/3 blur-3xl" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-gold/5 blur-3xl" />
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-burgundy-light/10 to-transparent" />
         </div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-12 text-center">
           <RevealSection>

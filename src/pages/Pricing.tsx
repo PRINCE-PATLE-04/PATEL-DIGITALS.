@@ -126,7 +126,12 @@ export default function Pricing() {
       </section>
 
       {/* Website Development Note */}
-      <section className="py-24 lg:py-32 border-t border-gold/10 bg-burgundy/20">
+      <section className="relative py-24 lg:py-32 border-t border-gold/10 section-gradient-3 overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute top-1/2 right-0 w-1/2 h-full opacity-5">
+            <div className="absolute inset-0 bg-gradient-to-l from-gold to-transparent rounded-full blur-3xl" />
+          </div>
+        </div>
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <RevealSection>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -210,8 +215,11 @@ export default function Pricing() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 lg:py-32 border-t border-gold/10 bg-burgundy/20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 text-center">
+      <section className="relative py-24 lg:py-32 border-t border-gold/10 section-gradient-1 overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-gold/5 blur-3xl" />
+        </div>
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-12 text-center">
           <RevealSection>
             <h2 className="font-playfair text-3xl lg:text-5xl font-semibold text-cream">NOT SURE WHERE TO START?</h2>
             <p className="mt-6 text-cream/70 text-lg max-w-xl mx-auto">

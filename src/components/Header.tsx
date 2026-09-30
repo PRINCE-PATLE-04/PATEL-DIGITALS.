@@ -35,8 +35,12 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20 lg:h-24">
           {/* Logo */}
-          <Link to="/" className="font-playfair text-xl lg:text-2xl font-semibold tracking-wider text-cream hover:text-gold transition-colors duration-300">
-            PATEL DIGITALS
+          <Link to="/" className="flex items-center gap-3 group">
+            <img
+              src="https://image.qwenlm.ai/generated-images/3b4a5531-34ac-440d-b6d9-d67bde15baa3/_result.png"
+              alt="Patel Digitals Logo"
+              className="h-10 lg:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+            />
           </Link>
 
           {/* Desktop Nav */}
