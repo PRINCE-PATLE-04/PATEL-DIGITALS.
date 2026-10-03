@@ -42,7 +42,7 @@ export default function Home() {
         {/* Full hero banner background */}
         <div className="absolute inset-0">
           <img
-            src="https://image.qwenlm.ai/generated-images/3ba5c5e6-fd0b-4b3d-88df-29604a9dfc84/_result.png"
+            src="https://image.qwenlm.ai/generated-images/729cf93c-9511-4eac-be5d-334cf2445509/_result.png"
             alt=""
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -52,10 +52,11 @@ export default function Home() {
           <div className="absolute inset-0 bg-burgundy-black/30" />
         </div>
 
-        {/* Floating gold elements */}
+        {/* Floating accent elements */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/4 right-1/4 w-96 h-96 rounded-full bg-gold/5 blur-3xl animate-float" />
-          <div className="absolute bottom-1/4 left-1/3 w-72 h-72 rounded-full bg-burgundy-light/20 blur-3xl" />
+          <div className="absolute top-1/4 right-1/4 w-96 h-96 rounded-full bg-sky/8 blur-3xl animate-float" />
+          <div className="absolute bottom-1/4 left-1/3 w-72 h-72 rounded-full bg-light-green/10 blur-3xl" />
+          <div className="absolute top-1/2 right-1/3 w-64 h-64 rounded-full bg-grey/5 blur-2xl" />
         </div>
 
         {/* Hero visual - abstract metallic composition (desktop only overlay) */}
@@ -179,7 +180,7 @@ export default function Home() {
         {/* Background visual */}
         <div className="absolute inset-0">
           <img
-            src="https://image.qwenlm.ai/generated-images/210f5c15-316e-4bfe-89c5-f43fb5108366/_result.png"
+            src="https://image.qwenlm.ai/generated-images/7f93563f-4a92-42aa-a301-66819224fc61/_result.png"
             alt=""
             className="absolute inset-0 w-full h-full object-cover opacity-20"
           />
@@ -210,8 +211,8 @@ export default function Home() {
                   { title: 'Growth', icon: '△' },
                 ].map((item, i) => (
                   <div key={i} className="premium-card p-8 group">
-                    <span className="text-gold text-2xl mb-4 block">{item.icon}</span>
-                    <h4 className="font-playfair text-lg text-cream group-hover:text-gold transition-colors duration-300">{item.title}</h4>
+                    <span className={`${i % 2 === 0 ? 'text-sky' : 'text-light-green'} text-2xl mb-4 block`}>{item.icon}</span>
+                    <h4 className="font-playfair text-lg text-cream group-hover:text-sky transition-colors duration-300">{item.title}</h4>
                   </div>
                 ))}
               </div>

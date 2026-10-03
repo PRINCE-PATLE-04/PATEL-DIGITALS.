@@ -36,7 +36,7 @@ export default function Contact() {
       <section className="relative pt-32 lg:pt-40 pb-16 lg:pb-24 overflow-hidden section-gradient-1">
         <div className="absolute inset-0">
           <div className="absolute top-0 right-0 w-1/2 h-full opacity-10">
-            <div className="absolute inset-0 bg-gradient-to-l from-gold/30 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-l from-sky/30 to-transparent" />
           </div>
         </div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-12">

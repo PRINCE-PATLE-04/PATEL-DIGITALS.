@@ -129,7 +129,7 @@ export default function Pricing() {
       <section className="relative py-24 lg:py-32 border-t border-gold/10 section-gradient-3 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-1/2 right-0 w-1/2 h-full opacity-5">
-            <div className="absolute inset-0 bg-gradient-to-l from-gold to-transparent rounded-full blur-3xl" />
+            <div className="absolute inset-0 bg-gradient-to-l from-light-green to-transparent rounded-full blur-3xl" />
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-6 lg:px-12">

@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
-    <footer className="relative bg-gradient-to-b from-burgundy-black via-[#1A0C0E] to-black border-t border-gold/10 overflow-hidden">
+    <footer className="relative bg-gradient-to-b from-burgundy-black via-[#0A1A15] to-[#060F0C] border-t border-gold/10 overflow-hidden">
       {/* Subtle background accent */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] rounded-full bg-gold blur-3xl" />
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] rounded-full bg-sky blur-3xl" />
       </div>
       <div className="relative max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-20">
@@ -13,7 +13,7 @@ export default function Footer() {
           <div>
             <Link to="/" className="inline-block">
               <img
-                src="https://image.qwenlm.ai/generated-images/38863507-3705-4ba6-a001-0f1b3d6932fe/_result.png"
+                src="https://image.qwenlm.ai/generated-images/f9d8d2a5-a859-4b90-ba75-8e509dfdf71b/_result.png"
                 alt="Patel Digitals Logo"
                 className="h-14 w-auto object-contain"
               />

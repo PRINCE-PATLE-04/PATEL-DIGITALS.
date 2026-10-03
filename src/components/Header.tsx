@@ -37,7 +37,7 @@ export default function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <img
-              src="https://image.qwenlm.ai/generated-images/38863507-3705-4ba6-a001-0f1b3d6932fe/_result.png"
+              src="https://image.qwenlm.ai/generated-images/f9d8d2a5-a859-4b90-ba75-8e509dfdf71b/_result.png"
               alt="Patel Digitals Logo"
               className="h-10 lg:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
             />

@@ -111,7 +111,7 @@ export default function Services() {
       {/* How We Work */}
       <section className="relative py-24 lg:py-32 border-t border-gold/10 section-gradient-2 overflow-hidden">
         <div className="absolute top-0 right-0 w-1/4 h-full opacity-5">
-          <div className="absolute inset-0 bg-gradient-to-l from-gold to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-l from-sky to-transparent" />
         </div>
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <RevealSection>
