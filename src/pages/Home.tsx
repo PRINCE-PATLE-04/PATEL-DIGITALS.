@@ -62,29 +62,29 @@ export default function Home() {
         {/* Hero visual - abstract metallic composition (desktop only overlay) */}
         <div className="absolute top-0 right-0 w-1/2 h-full hidden lg:block opacity-60">
           <div className="relative w-full h-full">
-            {/* Abstract gold shapes overlay */}
+            {/* Abstract accent shapes overlay */}
             <svg className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] opacity-20" viewBox="0 0 500 500">
               <defs>
-                <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#B48A4A" stopOpacity="0.6" />
-                  <stop offset="50%" stopColor="#D2AE6C" stopOpacity="0.3" />
-                  <stop offset="100%" stopColor="#B48A4A" stopOpacity="0.1" />
+                <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#A8C5A0" stopOpacity="0.6" />
+                  <stop offset="50%" stopColor="#89B4C4" stopOpacity="0.3" />
+                  <stop offset="100%" stopColor="#A8C5A0" stopOpacity="0.1" />
                 </linearGradient>
               </defs>
-              <ellipse cx="250" cy="250" rx="200" ry="120" fill="none" stroke="url(#goldGrad)" strokeWidth="0.5" transform="rotate(-20 250 250)" />
-              <ellipse cx="250" cy="250" rx="180" ry="100" fill="none" stroke="url(#goldGrad)" strokeWidth="0.5" transform="rotate(10 250 250)" />
-              <ellipse cx="250" cy="250" rx="160" ry="80" fill="none" stroke="url(#goldGrad)" strokeWidth="0.5" transform="rotate(-5 250 250)" />
-              <circle cx="250" cy="250" r="3" fill="#B48A4A" opacity="0.6" />
-              <circle cx="350" cy="200" r="2" fill="#D2AE6C" opacity="0.4" />
-              <circle cx="180" cy="300" r="2" fill="#D2AE6C" opacity="0.4" />
+              <ellipse cx="250" cy="250" rx="200" ry="120" fill="none" stroke="url(#accentGrad)" strokeWidth="0.5" transform="rotate(-20 250 250)" />
+              <ellipse cx="250" cy="250" rx="180" ry="100" fill="none" stroke="url(#accentGrad)" strokeWidth="0.5" transform="rotate(10 250 250)" />
+              <ellipse cx="250" cy="250" rx="160" ry="80" fill="none" stroke="url(#accentGrad)" strokeWidth="0.5" transform="rotate(-5 250 250)" />
+              <circle cx="250" cy="250" r="3" fill="#A8C5A0" opacity="0.6" />
+              <circle cx="350" cy="200" r="2" fill="#89B4C4" opacity="0.4" />
+              <circle cx="180" cy="300" r="2" fill="#89B4C4" opacity="0.4" />
             </svg>
             <svg className="absolute top-[30%] left-[40%] w-[400px] h-[400px] opacity-15 animate-float" viewBox="0 0 400 400">
-              <path d="M200,50 Q350,100 300,200 Q250,300 200,350 Q150,300 100,200 Q50,100 200,50" fill="none" stroke="#B48A4A" strokeWidth="0.5" />
-              <path d="M200,80 Q320,120 280,200 Q240,280 200,320 Q160,280 120,200 Q80,120 200,80" fill="none" stroke="#D2AE6C" strokeWidth="0.3" />
+              <path d="M200,50 Q350,100 300,200 Q250,300 200,350 Q150,300 100,200 Q50,100 200,50" fill="none" stroke="#A8C5A0" strokeWidth="0.5" />
+              <path d="M200,80 Q320,120 280,200 Q240,280 200,320 Q160,280 120,200 Q80,120 200,80" fill="none" stroke="#89B4C4" strokeWidth="0.3" />
             </svg>
             {/* Metallic sphere effect */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 rounded-full bg-gradient-to-br from-gold/10 via-transparent to-gold-light/5 blur-sm" />
-            <div className="absolute top-[45%] left-[55%] -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full bg-gradient-to-tr from-gold/5 via-transparent to-burgundy-light/10" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 rounded-full bg-gradient-to-br from-light-green/10 via-transparent to-sky/5 blur-sm" />
+            <div className="absolute top-[45%] left-[55%] -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full bg-gradient-to-tr from-sky/5 via-transparent to-burgundy-light/10" />
           </div>
         </div>
 
