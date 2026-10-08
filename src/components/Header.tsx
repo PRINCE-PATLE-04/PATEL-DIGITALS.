@@ -36,11 +36,11 @@ export default function Header() {
         <div className="flex items-center justify-between h-20 lg:h-24">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <img
-              src="https://image.qwenlm.ai/generated-images/f9d8d2a5-a859-4b90-ba75-8e509dfdf71b/_result.png"
-              alt="Patel Digitals Logo"
-              className="h-10 lg:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-            />
+            <div className="flex items-center gap-2">
+              <span className="font-playfair text-xl lg:text-2xl font-semibold tracking-wider text-cream group-hover:text-sky transition-colors duration-300">
+                PATEL-DIGITALS<span className="text-light-green">.</span>
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Nav */}

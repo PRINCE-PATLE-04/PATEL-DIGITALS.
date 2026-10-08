@@ -12,11 +12,9 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link to="/" className="inline-block">
-              <img
-                src="https://image.qwenlm.ai/generated-images/f9d8d2a5-a859-4b90-ba75-8e509dfdf71b/_result.png"
-                alt="Patel Digitals Logo"
-                className="h-14 w-auto object-contain"
-              />
+              <span className="font-playfair text-2xl font-semibold tracking-wider text-cream hover:text-sky transition-colors duration-300">
+                PATEL-DIGITALS<span className="text-light-green">.</span>
+              </span>
             </Link>
             <p className="mt-4 text-cream/60 text-sm leading-relaxed">
               Digital Strategy • Design • Growth.
@@ -64,7 +62,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-gold/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-cream/40 text-xs tracking-wide">
-            © {new Date().getFullYear()} Patel Digitals. All rights reserved.
+            © {new Date().getFullYear()} PATEL-DIGITALS. All rights reserved.
           </p>
           <p className="text-cream/40 text-xs tracking-wide">
             Designed & Developed by <span className="text-gold/60">Prince Patel</span>
